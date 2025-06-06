@@ -3,7 +3,7 @@ name: CI on Push
 on:
   push:
     branches:
-      usr/github-actions
+      main
 jobs:
   build:
     runs-on: ubuntu-latest
