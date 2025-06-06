@@ -1,0 +1,14 @@
+name: CI on Push
+
+on:
+  push:
+    branches:
+      usr/github-actions
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses:  actions/checkout@2
+      - name:  Run a scipt
+        run:  echo "Hello world"
+      
